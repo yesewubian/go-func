@@ -1,0 +1,2 @@
+# go-func
+common func
