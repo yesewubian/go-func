@@ -52,7 +52,7 @@ import (
  * err 错误信息
  * 入参 desk 已经被赋值：map[ 1:"zhang", 2:"li" ]
  */
-func SliceColumn(desk, input interface{}, columnKey, indexKey string) (err error) {
+func SliceMapColumn(desk, input interface{}, columnKey, indexKey string) (err error) {
 	structIndexColumn := func(desk, input interface{}, columnKey, indexKey string) (err error) {
 		findStructValByIndexKey := func(curVal reflect.Value, elemType reflect.Type, indexKey, columnKey string) (indexVal, columnVal reflect.Value, err error) {
 			index := reflect.ValueOf(indexKey)
